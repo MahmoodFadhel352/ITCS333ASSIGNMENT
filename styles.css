@@ -1,3 +1,98 @@
-p{
-    color: aquamarine;
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5e7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: limegreen;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color:blue;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    transition: transform 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Sections */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#schedule ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#gallery {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color:limegreen;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
 }
