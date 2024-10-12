@@ -54,14 +54,13 @@ main ul {
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 10px;  
 }
 
 .gallery img {
     border-radius: 20px;
 }
-
+/*hover effect for the img*/
 .gallery img:hover {
     transform: scale(1.1);
 }
